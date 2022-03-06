@@ -9,13 +9,27 @@ Scan the QR Code to start your Adventrue!
 @using BlazorBarcodeScanner.ZXing.JS
 
 <BlazorBarcodeScanner.ZXing.JS.BarcodeReader
-    Title="Scan Barcode from Camera"
+    VideoWidth="300"
+    VideoHeight="200"
+    Title="Scan QR code from Camera"
     StartCameraAutomatically="false"
     ShowStart="true"
     ShowReset="true"
-    ShowToggleTorch = "true"
+    ShowToggleTorch = "false"
     ShowVideoDeviceList="true"
-    VideoWidth="300"
-    VideoHeight="200"
+   
+    
  />
+@code{
+    private string LocalQRCodeText ="";
+
+    private void LocalReceivedQRText(BarcodeReceivedEventArgs args)
+    {
+        this.LocalQRCodeText = args.BarcodeText;
+        StateHasChanged();
+    }
+
+ }
+
+
 
