@@ -1,0 +1,21 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "net6.0",
+    "self-contained" : true,
+    "application"    : "ScavengersRUs",
+    "environment"    : "ScavengeRUs-dev",
+    "app-path"       : "/",
+    "iis-website"    : "Default Web Site",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0bc505708a9dd49c2\";\"aws:ec2:vpc,Subnets\"=\"subnet-0d39da38cd118d020\"",
+    "solution-stack"       : "64bit Windows Server Core 2019 v2.8.3 running IIS 10.0",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "scavengerus-dev",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role"
+}
