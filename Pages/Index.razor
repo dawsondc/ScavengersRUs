@@ -9,9 +9,13 @@
 
 <div>Use the Qr Scanner to scan the sign up code!</div>
 
+@*button to redirect to QR Scanner*@
 <button class="btn btn-primary" @onclick="RediretToPage">Get Started!</button>
 
 @code {
+    /// <summary>
+    /// redirecting to QR Scanner page once button list clicked
+    /// </summary>
     void RediretToPage()
     {
         UriHelper.NavigateTo("QRScanner");

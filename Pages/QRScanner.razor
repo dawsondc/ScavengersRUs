@@ -6,6 +6,7 @@ Scan the QR Code to start your Adventure!
 
 @using BlazorBarcodeScanner.ZXing.JS
 
+@*Setting scale of the image box for the scanner as well as showing certain input buttuns for the function*@
 <BlazorBarcodeScanner.ZXing.JS.BarcodeReader
     VideoWidth="300"
     VideoHeight="200"
@@ -19,6 +20,9 @@ Scan the QR Code to start your Adventure!
     
  />
 @code{
+    /// <summary>
+    /// Allowing the ability to scan qr codes async strings
+    /// </summary>
     private string LocalQRCodeText ="";
 
     private void LocalReceivedQRText(BarcodeReceivedEventArgs args)
