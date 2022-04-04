@@ -11,7 +11,8 @@
 * Super-light SVG files - 61.8 for the entire set 
 * SVG sprite&mdash;the modern replacement for icon fonts
 * Webfont (EOT, OTF, SVG, TTF, WOFF), PNG and WebP formats
-* Webfont stylesheets (including versions for Bootstrap and Foundation) in CSS, LESS, SCSS and Stylus formats
+* Webfont 
+s (including versions for Bootstrap and Foundation) in CSS, LESS, SCSS and Stylus formats
 * PNG and WebP raster images in 8px, 16px, 24px, 32px, 48px and 64px.
 
 
