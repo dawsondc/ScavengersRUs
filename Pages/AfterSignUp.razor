@@ -1,116 +1,49 @@
-﻿@page "/signUp"
+﻿@page "/aftersignup"
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
-
-    <!-- Title Page-->
-    <title>Create An Account</title>
-
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-    
-    
-</head>
 
 <body>
     <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <h2 class="title">Create Account</h2>
-                    <form method="POST">
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">First name</label>
-                                    <input class="input--style-4" type="text" name="first_name">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                               <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Phone Number</label>
-                                    <input class="input--style-4" type="text" name="phone">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Gender</label>
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Male
-                                            <input type="radio" checked="checked" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Female
-                                            <input type="radio" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                         <label class="radio-container">Other
-                                            <input type="radio" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                     
-                        <div class="p-t-15">
-                          <a herf ="AfterSignUp" class="btn btn--radius-2 btn--blue" type="submit">Sign Up</a>
-                            <!---- <button class="btn btn--radius-2 btn--blue" type="submit">Sign Up</button> -->
-                                               
-                        </div>
-                    </form>
+                     <img src="assets/img/supporters/ETSU logo.png" height= "60" width ="100" class=center>
+                    <h3 class="title">Check your email</h3>
+                     <p>You should receive an email</p>
+                     <p>with access ccode and lik to the game</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Jquery JS-->
-     <!-- <script src="vendor/jquery/jquery.min.js"></script>  -->
-    <!-- Vendor JS-->
-     <!-- <script src="vendor/select2/select2.min.js"></script>  -->
-      <!-- <script src="vendor/datepicker/moment.min.js"></script> -->
-    <!--  <script src="vendor/datepicker/daterangepicker.js"></script> -->
-
-    <!-- Main JS-->
-     <!-- <script src="js/global.js"></script>  -->
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) --> 
-
+</body>
 </html>
-<!-- end document-->
 
 @code {
 
 }
+
+
 <style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ 
+h3{
+  
+    text-align: center
+
+}
+
+p{
+    color: #000000;
+    text-align: center;
+}
+
+
 
 /* ==========================================================================
    #FONT
@@ -332,7 +265,6 @@ body{
   max-width: 680px;
 }
 
-
 /* ==========================================================================
    #BUTTON
    ========================================================================== */
@@ -368,13 +300,20 @@ body{
   border-radius: 20px;
 }
 
+.btn--green {
+  background: #57b846;
+}
 
-.btn--blue {
+.btn--green:hover {
+  background: #4dae3c;
+}
+
+.btn--red {
   background: #FF0000;
 }
 
-.btn--blue:hover {
-  background: #f06097;
+.btn--red:hover {
+  background: #3868cd;
 }
 
 
@@ -718,6 +657,8 @@ input {
   padding: 57px 65px;
   padding-bottom: 65px;
 }
+
+
 
 
 

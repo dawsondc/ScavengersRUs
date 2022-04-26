@@ -55,6 +55,7 @@
     <None Include="wwwroot\assets\img\supporters\6.png" />
     <None Include="wwwroot\assets\img\supporters\7.png" />
     <None Include="wwwroot\assets\img\supporters\8.png" />
+    <None Include="wwwroot\assets\img\supporters\check.png" />
     <None Include="wwwroot\assets\img\supporters\ETSU logo.png" />
     <None Include="wwwroot\assets\img\supporters\sponsorgen.png" />
     <None Include="wwwroot\assets\img\venue-gallery\1.jpg" />
